@@ -34,15 +34,10 @@ echo -e "\e[38;5;194m$(date +%A\ %d\ %B\ %Y\ -\ %H:%M)\e[m"
 
 # Environment {{{
 
-export PATH=$HOME:$HOME/bin:$MYHOME/bin:/usr/local/bin:/bin:$PATH
-export MYHOME='/cygdrive/c/Users/rafaelgp/AppData/Roaming/'
+export PATH=$PATH
 export EDITOR=emacs
 export DISPLAY=localhost:0.0 # Necessary to make gitk working
 
-
-#function gvim () { /cygdrive/c/Program\ Files/Vim/vim73/gvim.exe $1 &
-#alias gvim '/cygdrive/c/cygwin/bin/gvim.exe'
-#alias gvim 'cygdrive/c/cygwin/bin/run.exe -p /usr/X11R6/bin /cygdrive/c/bin/gvim -display 127.0.0.1:0.0'
 #  }}}
 
 # =========== Programs ==========
