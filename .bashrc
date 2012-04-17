@@ -48,8 +48,8 @@ alias serendipity='/cygdrive/c/cygwin/bin/run.exe -p /usr/X11R6/bin /cygdrive/c/
 
 alias cl='clear'
 alias ll='ls -la'
-alias eb='serendipity ${MYHOME}/.bashrc' # Like in 'edit bash' 
-alias sb='source ${MYHOME}/.bashrc' # Like in 'source bash'
+alias eb='serendipity ${HOME}/.bashrc' # Like in 'edit bash' 
+alias sb='source ${HOME}/.bashrc' # Like in 'source bash'
 
 # =========== Directories ==========
 
