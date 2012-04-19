@@ -42,7 +42,7 @@ export DISPLAY=localhost:0.0 # Necessary to make gitk working
 
 # =========== Programs ==========
 
-alias serendipity='/cygdrive/c/cygwin/bin/run.exe -p /usr/X11R6/bin /cygdrive/c/emacs24/src/emacs-24.0.94.1 -q -l /cygdrive/c/Users/rafaelgp/AppData/Roaming/.emacs.el -display 127.0.0.1:0.0'
+alias serendipity='/cygdrive/c/cygwin/bin/run.exe -p /usr/X11R6/bin /cygdrive/c/emacs24/src/emacs-24.0.94.1 -q -l /cygdrive/c/Users/rafaelgp/AppData/Roaming/.emacs.el &'
 
 # =========== Commands ==========
 
