@@ -60,6 +60,10 @@ alias c='cd /cygdrive/c'
 alias vt='cd /cygdrive/g/virtual_tours'
 alias jobs='cd /cygdrive/g/jobs'
 
+# =========== Jobs ==========
+
+alias fire='cd /cygdrive/g/virtual_tours/elearning/fire_safety/'
+
 # =========== Misc ==========
 
 alias missinglinks='grep -i "File does not exist" /var/log/apache3/error.log | grep "Mar\ 30" | grep -v "robots.txt" | cut -d \  -f13- | sort | uniq'
