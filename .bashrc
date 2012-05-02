@@ -63,6 +63,8 @@ alias jobs='cd /cygdrive/g/jobs'
 # =========== Jobs ==========
 
 alias fire='cd /cygdrive/g/virtual_tours/elearning/fire_safety/'
+alias mta='cd /cygdrive/g/virtual_tours/mta/'
+alias mintra='cd /cygdrive/g/virtual_tours/mintra_optima/'
 alias emd='cd ${HOME}/.emacs.d/' # EMacs Directory
 alias vid='cd ${HOME}/.emacs.d/' # VIm Directory
 
