@@ -48,7 +48,7 @@ alias serendipity='/cygdrive/c/cygwin/bin/run.exe -p /usr/X11R6/bin /cygdrive/c/
 
 alias cl='clear'
 alias ll='ls -la'
-alias eb='serendipity ${HOME}/.bashrc' # Like in 'edit bash' 
+alias eb='serendipity ${HOME}/.bashrc' # Like in 'edit bash'
 alias sb='source ${HOME}/.bashrc' # Like in 'source bash'
 
 # =========== Directories ==========
@@ -58,13 +58,17 @@ alias g='cd /cygdrive/g'
 export C='/cygdrive/c'
 alias c='cd /cygdrive/c'
 alias vt='cd /cygdrive/g/virtual_tours'
-alias jobs='cd /cygdrive/g/jobs'
+alias jbs='cd /cygdrive/g/jobs'
 
 # =========== Jobs ==========
 
 alias fire='cd /cygdrive/g/virtual_tours/elearning/fire_safety/'
 alias mta='cd /cygdrive/g/virtual_tours/mta/'
-alias mintra='cd /cygdrive/g/virtual_tours/mintra_optima/'
+alias mintra='cd /cygdrive/g/virtual_tours/mintra/optima/'
+alias rush='cd /cygdrive/g/virtual_tours/.creare/rush/'
+alias stoke='cd /cygdrive/g/virtual_tours/stoke_park/'
+alias addoctor='cd /cygdrive/g/websites/addoctor/'
+alias fergus='cd /cygdrive/g/virtual_tours/mintra/st_fergus/'
 alias emd='cd ${HOME}/.emacs.d/' # EMacs Directory
 alias vid='cd ${HOME}/.emacs.d/' # VIm Directory
 
@@ -75,6 +79,7 @@ alias sh1='ssh rafaelgp@75.98.171.177'
 function elc {
     emacs -batch -f batch-byte-compile $1
 }
+alias exifer="/cygdrive/g/virtual_tours/.archives/scripts/exifer/exifer.sh"
 
 # ========= Git ==========
 
@@ -99,11 +104,13 @@ alias grr='git remote rm'
 alias gs='git status'
 # gc      => git checkout master
 # gc bugs => git checkout bugs
+# Remove deleted files form git
+alias gr='~/bin/git_remove_after.sh'
 
 function gc {
-  if [ -z "$1" ]; then
-    git checkout master
-  else
-    git checkout $1
-  fi
+    if [ -z "$1" ]; then
+        git checkout master
+    else
+        git checkout $1
+    fi
 }
