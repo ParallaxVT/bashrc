@@ -53,33 +53,38 @@ alias sb='source ${HOME}/.bashrc' # Like in 'source bash'
 
 # =========== Directories ==========
 
+alias emd='cd ${HOME}/.emacs.d/' # EMacs Directory
 export G='/cygdrive/g'
 alias g='cd /cygdrive/g'
 export C='/cygdrive/c'
 alias c='cd /cygdrive/c'
 alias vt='cd /cygdrive/g/virtual_tours'
 alias jbs='cd /cygdrive/g/jobs'
+alias vt_template='cd /cygdrive/g/virtual_tours/.archives/virtual_tour_template/'
+alias new_scroll='cd /cygdrive/g/virtual_tours/.archives/new_croll/'
 
 # =========== Jobs ==========
 
-alias fire='cd /cygdrive/g/virtual_tours/elearning/fire_safety/'
-alias mta='cd /cygdrive/g/virtual_tours/mta/'
-alias mintra='cd /cygdrive/g/virtual_tours/mintra/optima/'
-alias rush='cd /cygdrive/g/virtual_tours/.creare/rush/'
-alias stoke='cd /cygdrive/g/virtual_tours/stoke_park/'
 alias addoctor='cd /cygdrive/g/websites/addoctor/'
 alias fergus='cd /cygdrive/g/virtual_tours/mintra/st_fergus/'
-alias emd='cd ${HOME}/.emacs.d/' # EMacs Directory
-alias vid='cd ${HOME}/.emacs.d/' # VIm Directory
+alias fire='cd /cygdrive/g/virtual_tours/elearning/fire_safety/'
+alias mta='cd /cygdrive/g/virtual_tours/mta/'
+alias natas='cd /cygdrive/g/virtual_tours/natas/'
+alias optima='cd /cygdrive/g/virtual_tours/mintra/optima/'
+alias rush='cd /cygdrive/g/virtual_tours/.creare/rush/'
+alias stoke='cd /cygdrive/g/virtual_tours/stoke_park/'
+alias stevenage='cd /cygdrive/g/virtual_tours/stevenage_bioscience/'
 
-# =========== Misc ==========
+# =========== misc ==========
 
 alias missinglinks='grep -i "File does not exist" /var/log/apache3/error.log | grep "Mar\ 30" | grep -v "robots.txt" | cut -d \  -f13- | sort | uniq'
 alias sh1='ssh rafaelgp@75.98.171.177'
 function elc {
     emacs -batch -f batch-byte-compile $1
 }
-alias exifer="/cygdrive/g/virtual_tours/.archives/scripts/exifer/exifer.sh"
+alias exifer="/cygdrive/g/virtual_tours/.archives/scripts/exifer.sh"
+# Create a new virtual tour directory
+alias newvt='/cygdrive/g/virtual_tours/.archives/scripts/newvt.sh'
 
 # ========= Git ==========
 
