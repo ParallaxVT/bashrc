@@ -60,7 +60,7 @@ export C='/cygdrive/c'
 alias c='cd /cygdrive/c'
 alias vt='cd /cygdrive/g/virtual_tours'
 alias jbs='cd /cygdrive/g/jobs'
-alias vt_template='cd /cygdrive/g/virtual_tours/.archives/virtual_tour_template/'
+alias vttemp='cd /cygdrive/g/virtual_tours/.archives/vt_template/'
 alias new_scroll='cd /cygdrive/g/virtual_tours/.archives/new_croll/'
 
 # =========== Jobs ==========
@@ -69,11 +69,11 @@ alias addoctor='cd /cygdrive/g/websites/addoctor/'
 alias fergus='cd /cygdrive/g/virtual_tours/mintra/st_fergus/'
 alias fire='cd /cygdrive/g/virtual_tours/elearning/fire_safety/'
 alias mta='cd /cygdrive/g/virtual_tours/mta/'
-alias natas='cd /cygdrive/g/virtual_tours/natas/'
 alias optima='cd /cygdrive/g/virtual_tours/mintra/optima/'
 alias rush='cd /cygdrive/g/virtual_tours/.creare/rush/'
 alias stoke='cd /cygdrive/g/virtual_tours/stoke_park/'
 alias stevenage='cd /cygdrive/g/virtual_tours/stevenage_bioscience/'
+alias awareness='cd /cygdrive/g/virtual_tours/natas/awareness/'
 
 # =========== misc ==========
 
@@ -110,7 +110,7 @@ alias gs='git status'
 # gc      => git checkout master
 # gc bugs => git checkout bugs
 # Remove deleted files form git
-alias gr='~/bin/git_remove_after.sh'
+alias gr='${HOME}/bin/git_remove_after.sh'
 
 function gc {
     if [ -z "$1" ]; then
