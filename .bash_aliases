@@ -46,8 +46,8 @@ alias elearning="bash $work_dir/virtual_tours/.archives/bin/elearning/elearning.
 # Cygwin
 # ========================================
 
-alias chrome='$rootdir/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe &'
-alias emacs='$rootdir/c/emacs-24.2/bin/runemacs.exe &'
+alias chrome='/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe &'
+alias emacs='/c/emacs-24.2/bin/runemacs.exe &'
 alias halt='shutdown -p -f'
 
 # ========================================
