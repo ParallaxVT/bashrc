@@ -12,11 +12,6 @@ go_func () {
     fi
 }
 
-# Change the window title to something else
-settitle () {
-    echo -ne "\e]2;$@\a\e]1;$@\a"
-}
-
 # This function defines a 'cd' replacement function capable of keeping,
 # displaying and accessing history of visited directories, up to 10 entries.
 # To use it type 'cd --'.
