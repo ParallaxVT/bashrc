@@ -27,7 +27,9 @@ alias vdir='ls --color=auto --format=long'
 alias ll='ls -l'                              # long list
 alias la='ls -lA'                             # all but . and ..
 
+# Directory navigation
 alias cd=cd_func
+alias cdd='. $win_home/bin/find_and_enter.sh'
 
 alias sb='. $HOME/.bashrc'
 
