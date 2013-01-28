@@ -33,6 +33,7 @@ alias cdd='. $win_home/bin/find_and_enter.sh'
 
 alias sb='. $HOME/.bashrc'
 
+# Important directories
 alias go=go_func $1
 alias dk='cd $desk_dir'
 alias wk='cd $work_dir'
