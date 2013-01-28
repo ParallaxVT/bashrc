@@ -35,10 +35,16 @@ alias sb='. $HOME/.bashrc'
 
 # Important directories
 alias go=go_func $1
-alias dk='cd $desk_dir'
-alias wk='cd $work_dir'
-alias wkp='cd /e'
-alias wbck='cd /f'
+alias dk='cd $desk_dir'         # Desktop
+alias wk='cd $work_dir'         # Work
+alias wkp='cd /e'               # Work Plus
+alias wbck='cd /f'              # Windows backup
+alias emd='cd ${HOME}/.emacs.d' # EMacs Directory
+alias jb='cd /g/jobs'           # Jobs
+alias vt='cd /g/virtualtours'   # virtual Tours
+alias vttemp=' $work_dir/virtual_tours/.archives/vt_template_8_0_15'
+alias kr='$work_dir/documents/software/virtual_tours/krpano/krpano-1.0.8-15'
+alias krt='$work_dir/documents/software/virtual_tours/krpano/krpanotools-1.0.8.15'
 
 # Scripts
 alias newvt="bash $win_home/bin/vt/newvt.sh"
