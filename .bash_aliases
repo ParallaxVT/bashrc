@@ -51,6 +51,12 @@ alias emacs='$rootdir/c/emacs-24.2/bin/runemacs.exe &'
 alias halt='shutdown -p -f'
 
 # ========================================
+# Server
+# ========================================
+
+alias missinglinks='grep -i "File does not exist" /var/log/apache3/error.log | grep "Mar\ 30" | grep -v "robots.txt" | cut -d \  -f13- | sort | uniq'
+alias tv='ssh 75.98.171.177'
+
 # ========================================
 # Emacs
 # ========================================
