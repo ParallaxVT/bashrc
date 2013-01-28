@@ -49,3 +49,32 @@ alias elearning="bash $work_dir/virtual_tours/.archives/bin/elearning/elearning.
 alias chrome='$rootdir/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe &'
 alias emacs='$rootdir/c/emacs-24.2/bin/runemacs.exe &'
 alias halt='shutdown -p -f'
+
+# ========================================
+# ========================================
+# Git
+# ========================================
+
+alias ga='git add'
+alias gap='git add -p'
+alias gb='git branch -a -v' # View local and remote braches
+alias gcl='git clone'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gl='git log --pretty=format:"%h %ad | %s%d" --graph --date=short '
+alias gll='git log --pretty=oneline'
+alias gm='git commit -m'
+alias gma='git commit -am'
+alias gp='git push'
+alias gpu='git pull'
+alias gra='git remote add'
+alias grr='git remote rm'
+alias gs='git status'
+
+# Remove deleted files form git
+alias gr='$win_home/bin/git_remove_after.sh'
+
+# Use:
+# gc => git checkout master
+# gc test => git checkout test
+alias gc='if [ -z "$1" ]; then git checkout master; else git checkout $1; fi'
