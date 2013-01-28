@@ -39,6 +39,7 @@ alias wk='cd $work_dir'
 alias wkp='cd /e'
 alias wbck='cd /f'
 
+# Scripts
 alias newvt="bash $win_home/bin/vt/newvt.sh"
 alias elearning="bash $work_dir/virtual_tours/.archives/bin/elearning/elearning.sh"
 
