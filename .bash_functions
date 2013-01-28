@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Use to navigate to hard disks
-# For example 'go c'
+# go c => cd /c/
 go_func () {
     if [ $HOSTNAME = "debian" ]; then
     # my_dir="$1_drive"
