@@ -14,14 +14,14 @@ alias df='df -h'
 alias du='du -h'
 
 # Misc
-alias less='less -r'                          # raw control characters
-alias whence='type -a'                        # where, of a sort
-alias grep='grep --color'                     # show differences in colour
-alias egrep='egrep --color=auto'              # show differences in colour
-alias fgrep='fgrep --color=auto'              # show differences in colour
+alias less='less -r'                           # raw control characters
+alias whence='type -a'                         # where, of a sort
+alias grep='grep --color=auto'                 # show differences in colour
+alias egrep='egrep --color=auto'               # show differences in colour
+alias fgrep='fgrep --color=auto'               # show differences in colour
+alias cl='clear'
+alias settitle='echo -ne "\e]2;$@\a\e]1;$@\a"' # Change window title
 
-# Some shortcuts for different directory listings
-alias ls='ls -hF --color=tty'                 # classify files in colour
 # Directory listings
 alias ls='ls -hF --color=tty'                  # classify files in colour
 alias dir='ls --color=auto --format=vertical'
