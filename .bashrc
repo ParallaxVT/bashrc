@@ -65,7 +65,9 @@ shopt -q -s cmdhist
 
 # Turn on programmable completion enhancements.
 # Any completions you add in ~/.bash_completion are sourced last.
-[[ -f /etc/bash_completion ]] && . /etc/bash_completion
+if [ -f /etc/bash_completion ]; then
+    source /etc/bash_completion
+fi
 
 # ========================================
 # history Options
@@ -108,3 +110,18 @@ function CLOSE_COLOR () { echo -ne '\e[m'; }
 # echo -e "\e[38;5;194m$(date +%A\ %d\ %B\ %Y\ -\ %H:%M)\e[m"
 PS1=' `EXT_COLOR 81`\u@\h`CLOSE_COLOR` `EXT_COLOR 159`$PWD >`CLOSE_COLOR``EXT_COLOR 173`$('__git_ps1' " (%s)")`CLOSE_COLOR`\n '
 
+# ========================================
+# MinGW - Msys
+# ========================================
+
+if [ $(uname -o) = "Msys" ]; then
+    if [ -f /c/MinGW/msys/1.0/etc/git-prompt.sh ]; then
+        source /c/MinGW/msys/1.0/etc/git-prompt.sh
+    fi
+    if [ -f /c/MinGW/msys/1.0/etc/git-completion.bash ]; then
+        source /MinGW/msys/1.0/etc/git-completion.bash
+    fi
+    if [ -f /c/MinGW/msys/1.0/etc/bash_completion ]; then
+        source  /c/MinGW/msys/1.0/etc/bash_completion
+    fi
+fi
