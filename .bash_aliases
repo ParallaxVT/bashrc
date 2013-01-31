@@ -39,6 +39,7 @@ alias sb='. $HOME/.bashrc'
 
 # Important directories
 alias go=go_func $1
+alias home='cd $my_home'        # Home
 alias dk='cd $desk_dir'         # Desktop
 alias wk='cd $work_dir'         # Work
 alias wkp='cd /e'               # Work Plus
