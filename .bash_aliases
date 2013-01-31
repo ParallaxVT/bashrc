@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Some example alias instructions
 # They will be used instead of any instructions they may mask.
 # For example, alias rm='rm -i' will mask the rm application.
@@ -51,6 +53,7 @@ alias krt='$work_dir/documents/software/virtual_tours/krpano/krpanotools-1.0.8.1
 # Scripts
 alias newvt="bash $win_home/bin/vt/newvt.sh"
 alias elearning="bash $work_dir/virtual_tours/.archives/bin/elearning/elearning.sh"
+alias backup="bash $win_home/bin/backup.sh"
 
 # ========================================
 # Cygwin
