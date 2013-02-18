@@ -12,12 +12,13 @@ export EDITOR=emacs
 export TERM='xterm-256color'
 
 if [ $HOSTNAME = "RafaLaptop" ] || [ $HOSTNAME = "RafaelGP" ]; then
-    desk_dir="$HOME/../../Desktop"
     win_home="$HOME"
-    work_dir="$HOME/../../work"
+    rgp_dir="$HOME/../.."
+    desk_dir="$rpg_dir/Desktop"
+    work_dir="$rgp_dir/work"
 else
-    desk_dir="$HOME/Desktop"
     win_home="/media/sf_C_DRIVE/Users/rafaelgp/AppData/Roaming"
+    desk_dir="$HOME/Desktop"
     work_dir="/media/sf_C_DRIVE/Users/rafaelgp/work"
 fi
 
