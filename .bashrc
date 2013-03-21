@@ -99,7 +99,7 @@ fi
 # Umask
 # ========================================
 
-umask 002      # 664 (rw-rw-r--)
+umask 002      # 666 (rw-rw-rw-) is the default. Substract 002 = 664
 
 # ========================================
 # Custom comand prompt
