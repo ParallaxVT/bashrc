@@ -13,7 +13,7 @@ export TERM='xterm-256color'
 
 if [ $HOSTNAME = "RafaLaptop" ] || [ $HOSTNAME = "RafaelGP" ]; then
     win_home="$HOME"
-    rgp_dir="$HOME/../.."
+    rgp_dir="/c/Users/rafaelgp"
     desk_dir="$rpg_dir/Desktop"
     work_dir="$rgp_dir/work"
 else
@@ -23,7 +23,7 @@ else
 fi
 
 if [ $HOSTNAME = "RafaelGP" ]; then
-    work_dir="/g"
+    work_dir="$rgp/work"
 fi
 
 # ========================================
