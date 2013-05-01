@@ -7,24 +7,24 @@
 # Environment variables
 # ========================================
 
-export PATH=${PATH}:${HOME}/bin
-export EDITOR=emacs
-export TERM='xterm-256color'
-
 if [ $HOSTNAME = "RafaLaptop" ] || [ $HOSTNAME = "RafaelGP" ]; then
     win_home="$HOME"
     rgp_dir="/c/Users/rafaelgp"
     desk_dir="$rpg_dir/Desktop"
     work_dir="$rgp_dir/work"
 else
-    win_home="/media/sf_C_DRIVE/Users/rafaelgp/AppData/Roaming"
+    win_home="/media/c/Users/rafaelgp/AppData/Roaming"
     desk_dir="$HOME/Desktop"
-    work_dir="/media/sf_C_DRIVE/Users/rafaelgp/work"
+    work_dir="/media/c/Users/rafaelgp/work"
 fi
 
 if [ $HOSTNAME = "RafaelGP" ]; then
     work_dir="$rgp/work"
 fi
+
+export PATH=${PATH}:${HOME}/bin:$work_dir/virtual_tours/.archives/bin/newvt:$work_dir/virtual_tours/.archives/bin/elearning
+export EDITOR=emacs
+export TERM='xterm-256color'
 
 # ========================================
 # Shell Options
