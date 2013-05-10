@@ -54,10 +54,10 @@ alias krt="$work_dir/documents/software/virtual_tours/krpano/krpanotools-1.0.8.1
 # Important jobs directories
 alias bin="cd $work_dir/virtual_tours/.archives/bin/"
 alias awa="cd $work_dir/virtual_tours/natas/awareness"
-alias winscp="/cygdrive/c/Program\ Files\ \(x86\)/WinSCP/WinSCP.exe $1"
 # Scripts
 alias newvt="bash $win_home/bin/vt/newvt.sh"
 alias elearning="bash $work_dir/virtual_tours/.archives/bin/elearning/elearning.sh"
+alias winscp="/cygdrive/c/Program\ Files\ \(x86\)/WinSCP/WinSCP.exe $1"
 
 # ========================================
 # Cygwin
