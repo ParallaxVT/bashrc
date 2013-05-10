@@ -58,7 +58,6 @@ alias winscp="/cygdrive/c/Program\ Files\ \(x86\)/WinSCP/WinSCP.exe $1"
 # Scripts
 alias newvt="bash $win_home/bin/vt/newvt.sh"
 alias elearning="bash $work_dir/virtual_tours/.archives/bin/elearning/elearning.sh"
-alias backup="bash $win_home/bin/backup.sh"
 
 # ========================================
 # Cygwin
