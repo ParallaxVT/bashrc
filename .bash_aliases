@@ -35,7 +35,7 @@ alias la='ls -lA'                              # all but . and ..
 alias cd=cd_func
 alias cdd='. $win_home/bin/find_and_enter.sh'
 
-alias sb='. $HOME/.bashrc'
+alias sb='. $win_home/.bashrc'
 
 # Important directories
 alias go=go_func $1
