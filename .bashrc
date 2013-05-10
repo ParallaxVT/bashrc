@@ -7,20 +7,10 @@
 # Environment variables
 # ========================================
 
-if [ $HOSTNAME = "RafaLaptop" ] || [ $HOSTNAME = "RafaelGP" ]; then
-    win_home="$HOME"
-    rgp_dir="/c/Users/rafaelgp"
-    desk_dir="$rpg_dir/Desktop"
-    work_dir="$rgp_dir/work"
-else
-    win_home="/media/c/Users/rafaelgp/AppData/Roaming"
-    desk_dir="$HOME/Desktop"
-    work_dir="/media/c/Users/rafaelgp/work"
-fi
-
-if [ $HOSTNAME = "RafaelGP" ]; then
-    work_dir="$rgp/work"
-fi
+rgp_dir="/media/c/Users/rafaelgp"
+desk_dir="$rpg_dir/Desktop"
+work_dir="$rgp_dir/work"
+win_home="/media/c/Users/rafaelgp/AppData/Roaming"
 
 export PATH=${PATH}:${HOME}/bin:$work_dir/virtual_tours/.archives/bin/newvt:$work_dir/virtual_tours/.archives/bin/elearning
 export EDITOR=emacs
