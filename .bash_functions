@@ -67,6 +67,5 @@ cd_func () {
 }
 
 function smush () {
-    # echo "hi"
     java -jar $work_dir/virtual_tours/.archives/bin/smushit/smushit.jar -imageDir=$1
 }
