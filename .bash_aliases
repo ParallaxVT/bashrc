@@ -38,7 +38,7 @@ alias cdd='. $win_home/bin/find_and_enter.sh'
 alias sb='. $win_home/.bashrc'
 
 # Important directories
-alias go=go_func $1
+alias goto=go_func $1
 alias rgp="cd $rgp_dir"                        # Rafaelgp
 alias home="cd $win_home"                      # Home
 alias dk="cd $rpg_dir/Desktop"                 # Desktop
