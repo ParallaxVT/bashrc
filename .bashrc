@@ -8,9 +8,8 @@
 # ========================================
 
 rgp_dir="/media/c/Users/rafaelgp"
-desk_dir="$rpg_dir/Desktop"
-work_dir="$rgp_dir/work"
 win_home="/media/c/Users/rafaelgp/AppData/Roaming"
+work_dir="$rgp_dir/work"
 
 export PATH=${PATH}:${HOME}/bin:$work_dir/virtual_tours/.archives/bin/newvt:$work_dir/virtual_tours/.archives/bin/elearning
 export EDITOR=emacs
