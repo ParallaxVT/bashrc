@@ -54,6 +54,7 @@ alias krt="$work_dir/documents/software/virtual_tours/krpano/krpanotools-1.0.8.1
 # Important jobs directories
 alias bin="cd $work_dir/virtual_tours/.archives/bin/"
 alias awa="cd $work_dir/virtual_tours/natas/awareness"
+alias ictb="cd $work_dir/virtual_tours/citb/innovation_team_talk/"
 # Scripts
 alias newvt="bash $win_home/bin/vt/newvt.sh"
 alias elearning="bash $work_dir/virtual_tours/.archives/bin/elearning/elearning.sh"
