@@ -69,3 +69,8 @@ cd_func () {
 function smush () {
     java -jar $work_dir/virtual_tours/.archives/bin/smushit/smushit.jar -imageDir=$1
 }
+
+# Set new termminal title
+function set_term_title () {
+    echo -ne '\033]0;'$1'\007'
+}
