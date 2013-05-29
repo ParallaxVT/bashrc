@@ -4,8 +4,8 @@
 # go c => cd /c/
 go_func () {
     if [ $HOSTNAME = "debian" ]; then
-    # my_dir="$1_drive"
-    # cd ${!my_dir}
+        # my_dir="$1_drive"
+        # cd ${!my_dir}
         cd /media/sf_$1_DRIVE
     else
         cd /$1
@@ -28,8 +28,8 @@ cd_func () {
     [[ -z $1 ]] && the_new_dir=$HOME
 
     if [[ ${the_new_dir:0:1} == '-' ]]; then
-#
-# Extract dir N from dirs
+        #
+        # Extract dir N from dirs
         index=${the_new_dir:1}
         [[ -z $index ]] && index=1
         adir=$(dirs +$index)
@@ -37,22 +37,22 @@ cd_func () {
         the_new_dir=$adir
     fi
 
-#
-# '~' has to be substituted by ${HOME}
+    #
+    # '~' has to be substituted by ${HOME}
     [[ ${the_new_dir:0:1} == '~' ]] && the_new_dir="${HOME}${the_new_dir:1}"
 
-#
-# Now change to the new dir and add to the top of the stack
+    #
+    # Now change to the new dir and add to the top of the stack
     pushd "${the_new_dir}" > /dev/null
     [[ $? -ne 0 ]] && return 1
     the_new_dir=$(pwd)
 
-#
-# Trim down everything beyond 11th entry
+    #
+    # Trim down everything beyond 11th entry
     popd -n +11 2>/dev/null 1>/dev/null
 
-#
-# Remove any other occurence of this dir, skipping the top of the stack
+    #
+    # Remove any other occurence of this dir, skipping the top of the stack
     for ((cnt=1; cnt <= 10; cnt++)); do
         x2=$(dirs +${cnt} 2>/dev/null)
         [[ $? -ne 0 ]] && return 0
