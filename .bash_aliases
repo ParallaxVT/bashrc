@@ -22,7 +22,6 @@ alias grep='grep --color=auto'                 # show differences in colour
 alias egrep='egrep --color=auto'               # show differences in colour
 alias fgrep='fgrep --color=auto'               # show differences in colour
 alias cl='clear'
-# alias settitle='echo -ne "\e]2;$@\a\e]1;$@\a"' # Change window title
 alias settitle=set_term_title $1
 
 # Directory listings
