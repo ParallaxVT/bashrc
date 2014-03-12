@@ -27,6 +27,7 @@ set -o ignoreeof
 #
 # Use case-insensitive filename globbing
 shopt -s nocaseglob
+bind 'set completion-ignore-case on'
 #
 # Make bash append rather than overwrite the history on disk
 #shopt -s histappend
