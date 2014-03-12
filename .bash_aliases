@@ -85,10 +85,6 @@ alias tv='ssh 75.98.171.177'
 # Byte compile specified file
 alias elc='emacs -batch -f batch-byte-compile $1'
 
-if [ $(uname -o) = "GNU/Linux" ];then
-    alias emacs='emacs-snapshot &'
-fi
-
 # ========================================
 # Git
 # ========================================
