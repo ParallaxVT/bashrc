@@ -23,6 +23,7 @@ alias egrep='egrep --color=auto'               # show differences in colour
 alias fgrep='fgrep --color=auto'               # show differences in colour
 alias cl='clear'
 alias settitle=set_term_title $1
+alias halt='sudo halt'
 
 # Directory listings
 alias ls='ls -hF --color=tty'                  # classify files in colour
