@@ -59,7 +59,7 @@ alias ictb="cd $work_dir/virtual_tours/citb/innovation_team_talk/"
 # Scripts
 alias newvt="bash $win_home/bin/vt/newvt.sh"
 alias elearning="bash $work_dir/virtual_tours/.archives/bin/elearning/elearning.sh"
-alias winscp="/cygdrive/c/Program\ Files\ \(x86\)/WinSCP/WinSCP.exe $1"
+alias winscp="/media/c/Program\ Files\ \(x86\)/WinSCP/WinSCP.exe $1"
 
 # ========================================
 # Cygwin
