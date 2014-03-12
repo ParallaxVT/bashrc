@@ -93,12 +93,17 @@ umask 002      # 666 (rw-rw-rw-) is the default. Substract 002 = 664
 # ========================================
 # Custom comand prompt
 # ========================================
-
-function EXT_COLOR () { echo -ne "\e[38;5;$1m"; }
-function CLOSE_COLOR () { echo -ne '\e[m'; }
-
-# echo -e "\e[38;5;194m$(date +%A\ %d\ %B\ %Y\ -\ %H:%M)\e[m"
-PS1=' `EXT_COLOR 81`\u@\h`CLOSE_COLOR` `EXT_COLOR 159`$PWD >`CLOSE_COLOR``EXT_COLOR 173`$('__git_ps1' " (%s)")`CLOSE_COLOR`\n '
+# High Intensity
+IBlack='\e[0;90m'       # Black
+IRed='\e[0;91m'         # Red
+IGreen='\e[0;92m'       # Green
+IYellow='\e[0;93m'      # Yellow
+IBlue='\e[0;94m'        # Blue
+IPurple='\e[0;95m'      # Purple
+ICyan='\e[0;96m'        # Cyan
+IWhite='\e[0;97m'       # White
+IEND='\e[m'
+PS1="$IGreen \$PWD $IEND>$('__git_ps1' " $IYellow[$IEND$ICyan%s$IEND$IYellow]$IEND")\n "
 
 # ========================================
 # MinGW - Msys
