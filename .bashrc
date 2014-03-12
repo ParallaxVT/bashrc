@@ -9,7 +9,7 @@
 
 rgp_dir="/media/c/Users/rafaelgp"
 win_home="/media/c/Users/rafaelgp/AppData/Roaming"
-work_dir="$rgp_dir/work"
+work_dir="/media/e"
 
 export PATH=${PATH}:${HOME}/bin:$work_dir/virtual_tours/.archives/bin/newvt:$work_dir/virtual_tours/.archives/bin/elearning
 export EDITOR=emacs
