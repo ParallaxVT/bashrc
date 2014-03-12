@@ -104,6 +104,8 @@ alias gpu='git pull'
 alias gra='git remote add'
 alias grr='git remote rm'
 alias gs='git status'
+alias grc='git rm --cached'         # Stop tracking file
+alias grrc='git rm -r --cached'     # Stop tracking directory
 
 # Remove deleted files form git
 alias gr='$win_home/bin/git_remove_after.sh'
@@ -112,3 +114,4 @@ alias gr='$win_home/bin/git_remove_after.sh'
 # gc => git checkout master
 # gc test => git checkout test
 alias gc='if [ -z "$1" ]; then git checkout master; else git checkout $1; fi'
+
