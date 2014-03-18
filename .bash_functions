@@ -74,3 +74,7 @@ function smush () {
 function set_term_title () {
     echo -ne '\033]0;'$1'\007'
 }
+# List current directory files without extension
+function ls-no-ext () {
+    ls -1 | sed -e 's/\..*$//'
+}
