@@ -55,9 +55,21 @@ shopt -q -s cmdhist
 # These completion tuning parameters change the default behavior of bash_completion:
 
 # Turn on programmable completion enhancements.
-# Any completions you add in ~/.bash_completion are sourced last.
-if [ -f /etc/bash_completion ]; then
-    source /etc/bash_completion
+# Source files for Git-bash if they exist
+if [ $(uname) = "MINGW32_NT-6.1" ]; then
+    if [ -f /c/'Program Files (x86)'/Git/etc/git-prompt.sh ]; then
+        source /c/'Program Files (x86)'/Git/etc/git-prompt.sh
+    fi
+    if [ -f /c/'Program Files (x86)'/Git/etc/git-completion.bash ]; then
+        source /c/'Program Files (x86)'/Git/etc/git-completion.bash
+    fi
+    #if [ -f /c/'Program Files (x86)'/Git/etc/bash_completion ]; then
+    #    source /c/'Program Files (x86)'/Git/etc/bash_completion
+    #fi
+else
+    if [ -f /etc/bash_completion ]; then
+        source /etc/bash_completion
+    fi
 fi
 
 # ========================================
@@ -105,22 +117,6 @@ ICyan='\e[0;96m'        # Cyan
 IWhite='\e[0;97m'       # White
 IEND='\e[m'
 PS1="$IGreen \$PWD $IEND>$('__git_ps1' " $IYellow[$IEND$ICyan%s$IEND$IYellow]$IEND")\n "
-
-# ========================================
-# MinGW - Msys
-# ========================================
-
-if [ $(uname -o) = "Msys" ]; then
-    if [ -f /c/MinGW/msys/1.0/etc/git-prompt.sh ]; then
-        source /c/MinGW/msys/1.0/etc/git-prompt.sh
-    fi
-    if [ -f /c/MinGW/msys/1.0/etc/git-completion.bash ]; then
-        source /MinGW/msys/1.0/etc/git-completion.bash
-    fi
-    if [ -f /c/MinGW/msys/1.0/etc/bash_completion ]; then
-        source  /c/MinGW/msys/1.0/etc/bash_completion
-    fi
-fi
 
 # =========================================
 # Appearance
